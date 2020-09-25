@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestSpecification>
+  <TestCases>
+    <TestCase>
+      <TestCaseName>a2030_out_01 &gt; a8050_out_01 &gt; Having Email on file_Risk State_Fax</TestCaseName>
+      <MediaType>Voice</MediaType>
+      <FolderPath>Cyara_Customer_Success</FolderPath>
+      <Description />
+      <PhoneNo>18447295201</PhoneNo>
+      <PhoneNoLocal>false</PhoneNoLocal>
+      <Notes />
+      <AlertMsg />
+      <PreConnectAudio />
+      <AlertFrequency>Once</AlertFrequency>
+      <MinorThresholdCriticalCount>3</MinorThresholdCriticalCount>
+      <MajorThresholdCriticalCount>1</MajorThresholdCriticalCount>
+      <Steps>
+        <RingingStep>
+          <MinPauseTime>0</MinPauseTime>
+          <MaxPauseTime>0</MaxPauseTime>
+          <MinorThresholdTime>5</MinorThresholdTime>
+          <MajorThresholdTime>10</MajorThresholdTime>
+        </RingingStep>
+        <CallSteps>
+          <Step>
+            <StepNo>1</StepNo>
+            <Description>gc1000_broadcast</Description>
+            <ExpectedText>GEICO's priority is the health and safety of our customers, our employees, and the community. Since wait times may be longer than usual, it's easier and faster to manage your account digitally. We strongly encourage you to access your account online through the GEICO mobile app or geico.com to make policy updates, check claim status, and more.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>2</StepNo>
+            <Description>TFN</Description>
+            <ExpectedText>Please enter the toll free number to be used for this session or enter the pound sign to retain the original number</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>#</ReplyText>
+            <ReplyExchangeType>DTMF</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>3</StepNo>
+            <Description>ANI</Description>
+            <ExpectedText>Please enter the caller's phone number to be used for this session or enter the pound sign to retain the original number</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>#</ReplyText>
+            <ReplyExchangeType>DTMF</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>4</StepNo>
+            <Description>gc1000_out_12</Description>
+            <ExpectedText>Thank you for calling GEICO.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>5</StepNo>
+            <Description>Miranda Statement</Description>
+            <ExpectedText>Your call may be recorded for quality purposes</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>6</StepNo>
+            <Description>GuideMe_OFF_gc1100_ini_02_Welcome</Description>
+            <ExpectedText>How can I help you today?</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>Proof of insurance</ReplyText>
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>7</StepNo>
+            <Description>gc4200_out_01</Description>
+            <ExpectedText>Okay.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>8</StepNo>
+            <Description>gc2000_ini_01</Description>
+            <ExpectedText>What kind of policy are you calling about ? For example, "auto policy" or "homeowners". Or say "list them all"</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>Auto</ReplyText>
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>9</StepNo>
+            <Description>gc2000_out_01</Description>
+            <ExpectedText>Sure.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>10</StepNo>
+            <Description>gc2800_ini_01</Description>
+            <ExpectedText>If you represent a lienholder company or a lease company on this vehicle, say "yes". Otherwise, say "no".</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>No</ReplyText>
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>11</StepNo>
+            <Description>gc7912_ini_01</Description>
+            <ExpectedText>I want to make sure you get the right form. An 'ID card' will have the policy number and policyholder information, and a 'binder' will show more coverage details. Please say 'ID card', 'binder', or 'send me both'. Or if you need a different proof-of-insurance document, say 'other'.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>ID Card</ReplyText>
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>12</StepNo>
+            <Description>Application tag</Description>
+            <ExpectedText>The action is {*} . application tag is {*} L O B is {*} function is {*}. Subfunction is {*} Return code is {*}. Multi client {*} Caller verified is {*} , I D number is {*}.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>13</StepNo>
+            <Description>a2020_out_01</Description>
+            <ExpectedText>For your convenience, you can communicate with me by speaking or keying in your responses. Let's get you signed in.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>14</StepNo>
+            <Description>a2030_ini_03</Description>
+            <ExpectedText>Please say or enter your policy number now. If you need a minute to find it, say 'hold on'. You can also say 'I don't have it' and we can try something else.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>[Policy Number]</ReplyText>
+            <ReplyExchangeType>DTMF</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>15</StepNo>
+            <Description>a2030_out_01</Description>
+            <ExpectedText>Thank you.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>16</StepNo>
+            <Description>a2070_ini_01</Description>
+            <ExpectedText>What's the five digit zip code of your policy mailing address?</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>[Zip Code]</ReplyText>
+            <ReplyExchangeType>DTMF</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>17</StepNo>
+            <Description>a19020_ini_01</Description>
+            <ExpectedText>For faster service in the future I can remember this number that ends in {*}</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>18</StepNo>
+            <Description>a19020_ini_02</Description>
+            <ExpectedText>If you're a GEICO policyholder calling from a home or mobile phone I can use it to recognize you next time. Should I remember this phone number?</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>No</ReplyText>
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>19</StepNo>
+            <Description>a8005_out_01</Description>
+            <ExpectedText>Okay. Requesting ID cards.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>20</StepNo>
+            <Description>a8080_out_06</Description>
+            <ExpectedText>All set. I've emailed the ID cards</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>21</StepNo>
+            <Description>a8080_out_25</Description>
+            <ExpectedText>to your {*}</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>22</StepNo>
+            <Description>a8080_out_26</Description>
+            <ExpectedText>address on file</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>23</StepNo>
+            <Description>a8050_ini_02</Description>
+            <ExpectedText>If you'd like additional copies of your ID cards, say 'text me a link', 'send by fax', or 'send by U.S. mail'. Or if you only want the email, say 'I'm finished'.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>Fax</ReplyText>
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>24</StepNo>
+            <Description>a8050_out_01</Description>
+            <ExpectedText>Alright.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>25</StepNo>
+            <Description>a8067_ini_01</Description>
+            <ExpectedText>For security, what's the policy holder's date of birth?</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>[DOB]</ReplyText>
+            <ReplyExchangeType>DTMF</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>26</StepNo>
+            <Description>a8070_ini_01</Description>
+            <ExpectedText>Tell me the fax number, including the area code.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>[Fax Number]</ReplyText>
+            <ReplyExchangeType>DTMF</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>27</StepNo>
+            <Description>a8070_out_01</Description>
+            <ExpectedText>Okay, one moment.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>28</StepNo>
+            <Description>a8080_out_02</Description>
+            <ExpectedText>All set. I faxed your ID cards to you.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>29</StepNo>
+            <Description>eois_greeting</Description>
+            <ExpectedText>Please help us improve your experience by answering one question.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>30</StepNo>
+            <Description>eois_likertquestion</Description>
+            <ExpectedText>How would you rate your experience with the automated phone system on this call? For 'excellent', say or press 5. 'Very good', 4. 'Good', 3. 'Fair', 2. 'Poor', 1.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>5</ReplyText>
+            <ReplyExchangeType>DTMF</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>31</StepNo>
+            <Description>questionPrompts.suffix</Description>
+            <ExpectedText>Thank you.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>32</StepNo>
+            <Description>DS0150_ini_01</Description>
+            <ExpectedText>Would you like to add a comment in your own words? Please say yes or no.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>Yes</ReplyText>
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>33</StepNo>
+            <Description>questionPrompts.coreQuestion</Description>
+            <ExpectedText>Please start talking after the beep. When you're done, press pound.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText>Excellent#</ReplyText>
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>34</StepNo>
+            <Description>exit</Description>
+            <ExpectedText>Thank you for your feedback.</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>3</MinorThresholdTime>
+            <MajorThresholdTime>5</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+          <Step>
+            <StepNo>35</StepNo>
+            <Description>a12005_out_03</Description>
+            <ExpectedText>If you're done feel free to hang up. Otherwise What would you like to do next?</ExpectedText>
+            <ExpectedExchangeType>MPSR</ExpectedExchangeType>
+            <ReplyText />
+            <ReplyExchangeType>Speech</ReplyExchangeType>
+            <MinorThresholdTime>20</MinorThresholdTime>
+            <MajorThresholdTime>30</MajorThresholdTime>
+            <MinPauseTime>0</MinPauseTime>
+            <MaxPauseTime>0</MaxPauseTime>
+            <MajorConfidenceLevel>60</MajorConfidenceLevel>
+            <MinorConfidenceLevel>80</MinorConfidenceLevel>
+            <PostSpeechSilenceTimeout>2.5</PostSpeechSilenceTimeout>
+            <BlockPath />
+          </Step>
+        </CallSteps>
+      </Steps>
+    </TestCase>
+    
+  </TestCases>
+</TestSpecification>
